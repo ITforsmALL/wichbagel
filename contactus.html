@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Wich Bagel - Contact Us</title>
+<style type="text/css">
+form {
+    background-color: #bfbfb0;
+    border-radius: 8px;
+}
+input {
+    background-color: #ebc7a7;
+}
+
+input[type=text] {
+    border-color: ffffff;
+    border-radius: 4px;
+    font-family: cursive;
+    color: #913909;
+}
+input[type=number] {
+    border-color: ffffff;
+    border-radius: 4px;
+    background-color: #354c63;
+}
+label {
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<img src="images/logo.gif" alt="Wich Bagel Logo" width="150" height="150">
+<h1>
+Get in touch with us at Wich Bagel!
+</h1>
+</header>
+<nav></nav>
+<main>
+<h2>
+We would love to hear from you.
+</h2>
+<form action=" " method="post" autocomplete="on" body {
+  background-color: coral;
+}>
+  <label for="name1">First name:</label><br>
+  <input type="text" name="name1" required><br>
+  <label for="name2">Last name:</label><br>
+  <input type="text" name="name2" required><br><br>
+  <label for="email" automcomplete="off">email Address:</label><br>
+  <input type="text" name="email" required><br><br>
+  <label for="phone">Phone Number:</label><br>
+  <input type="text" name="phone"><br><br>
+
+  <p>Please select your Country:</p>
+  <input type="radio" name="USA" value="USA">
+  <label for="USA">USA</label><br>
+  <input type="radio" name="Canada" value="Canada">
+  <label for="Canada">Canada</label><br>
+  <input type="radio" name="Mexico" value="Mexico">
+  <label for="Mexico">Mexico</label><br><br>
+
+  <input type="checkbox" name="yes" value="yes">
+  <label for="yes"> Ok to Contact with Promotional Information</label><br>
+  <input type="checkbox" name="no" value="No">
+  <label for="yes"> Please do not contact me</label><br>
+<br><br>
+
+  <label for="Comments">Comments</label><br>
+  <textarea name="Comments" rows="4" cols="50">
+  </textarea><br><br>
+
+<label for="interests">Please let us know what you're most interested in:</label>
+<select name="Interests">
+  <option value="Franchise">Franchise Opportunities</option>
+  <option value="Wholesale Bagels">Bagel Wholesale</option>
+  <option value="food">Delicious Sandwiches</option>
+  <option value="employ">Employment</option>
+</select>
+
+  <h2>Enter your four-digit passcode, then click OK:</h2>
+<input id="id1" type="number" min="1000" max="9999">
+<button onclick= "myFunction()">OK</button>
+<p id="passcode"></p>
+<script>
+function myFunction() {
+var inpObj = document.getElementById("id1");
+if (inpObj.checkValidity() == false) {
+document.getElementById("passcode").innerHTML =
+inpObj.validationMessage;
+} else {
+document.getElementById("passcode").innerHTML = "Passcode Valid";
+}
+}
+</script>
+  <input type="submit" value="Submit">
+</form> 
+</main>
+<footer></footer>
+</body>
+
+</html>
