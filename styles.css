@@ -28,9 +28,9 @@ margin-left: 10%;
 }
 footer {
 clear: both;
-background-color: #000000;
+background-color: #999966;
 color: #ffffff;
-text-align: center;
+text-align: left;
 margin-left: 10%;
 padding: 5px;
 font-size: 12pt;
@@ -71,4 +71,11 @@ background-color: #999966;
 }
 .rowcolor {
     color: #996633;
+}
+.orderrowcolor {
+    color: #99ccff;
+}
+#tablestyle2 {
+   width: 80%;
+   background-color: #99ccff;
 }
